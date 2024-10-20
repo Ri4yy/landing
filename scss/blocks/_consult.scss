@@ -1,0 +1,65 @@
+.consult {
+    position: relative;
+    border: 2px solid $main-color;
+    border-radius: 40px;
+
+    padding: 58px 78px;
+
+    @media(max-width: $breakpoint1024) {
+        padding: 40px 40px 60px 40px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+
+        & h2 {
+            max-width: 784px;
+        }
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 26px;
+        color: #474747;
+    }
+
+    &__wrapper {
+        margin-top: 70px;
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        row-gap: 70px;
+        column-gap: 60px;
+
+        @media(max-width: $breakpoint1440) {
+            gap: 40px;
+        }
+    }
+    &__item {
+
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 30px;
+        color: #000;
+    }
+    &__description {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 26px;
+        color: #474747;
+    }
+
+    &::after {
+        content: url(../assets/img/icons/blot.png);
+        position: absolute;
+        right: -4px;
+        top: 330px;
+
+        @media(max-width: 1600px) {
+            display: none;
+        }
+    }
+}

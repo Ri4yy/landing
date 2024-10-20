@@ -53,14 +53,10 @@
 }
 
 .btn-menu {
-    display: none;
     flex-direction: column;
     justify-content: center;
 
     position: relative;
-
-    width: 14px;
-    height: 10px;
 
     @media(max-width: $breakpoint768) {
         display: flex;

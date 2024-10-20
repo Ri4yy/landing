@@ -1,0 +1,52 @@
+.reviews {
+    border: 2px solid $main-color;
+    border-radius: 40px;
+    padding: 58px 78px;
+
+    @media(max-width: $breakpoint1024) {
+        padding: 40px 40px 60px 40px;
+    }
+
+    &__top {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    &__wrapper {
+        margin-top: 56px;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+        gap: 82px;
+
+        @media(max-width: $breakpoint1440) {
+            gap: 40px;
+        }
+        @media(max-width: $breakpoint1280) {
+            gap: 20px;
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        border-radius: 20px;
+        background: $main-color;
+        padding: 32px 24px 52px;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 30px;
+        color: #fff;
+    }
+    &__img {
+        display: flex;
+        width: fit-content;
+    }
+    &__description {
+        font-weight: 400;
+        font-size: 26px;
+        color: #fff;
+    }
+}

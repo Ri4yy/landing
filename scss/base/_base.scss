@@ -1,8 +1,9 @@
 @import url("../assets/fonts/stylesheet.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 html,
 body {
-    font-family: '';
+    font-family: "Roboto", sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -11,10 +12,30 @@ h1 {
     color: $main-color;
 }
 h2 {
-    color: $main-color;
+    font-weight: 800;
+    font-size: 42px;
+    color: #fff;
 }
 h3 {
     color: $main-text;
+}
+
+// Заголовки
+.title {
+    color: $main-color;
+
+    &--white {
+        color: #fff;
+    }
+}
+.number {
+    font-weight: 800;
+    font-size: 40px;
+    color: $main-color;
+
+    &--white {
+        color: #fff;
+    }
 }
 
 // База
@@ -39,10 +60,31 @@ h3 {
     }
 }
 .section {
-    margin-top: $section-top;
 
-    @media(max-width: $breakpoint768) {
-        margin-top: 90px;
+
+    &--xlarge {
+        margin-top: 200px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 90px;
+        }
+    }
+    &--large {
+        margin-top: 170px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 90px;
+        }
+    }
+    &--medium {
+        margin-top: 136px;
+
+        @media(max-width: $breakpoint768) {
+            margin-top: 90px;
+        }
+    }
+    &--top {
+        margin-top: 70px;
     }
 }
 

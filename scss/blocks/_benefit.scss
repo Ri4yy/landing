@@ -1,0 +1,80 @@
+.benefit {
+    position: relative;
+
+    padding: 0 78px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, auto);
+
+    &__item {
+        position: relative;
+
+        &:nth-of-type(1) {
+            & .benefit__post {
+                transform: translate(70px, -10px);
+            }
+        }
+        &:nth-of-type(2) {
+            & .benefit__post {
+                transform: translate(20px, -10px);
+            }
+        }
+        &:nth-of-type(3) {
+            & .benefit__post {
+                transform: translate(110px, -10px);
+            }
+        }
+    }
+    &__number {
+        width: fit-content;
+        font-weight: 400;
+        line-height: 1;
+        font-size: 96px;
+        color: #016b5a;
+    }
+    &__small {
+        font-weight: 400;
+        font-size: 36px;
+        color: #016b5a;
+    }
+    &__post {
+        display: block;
+        margin-left: auto;
+        width: fit-content;
+
+        font-weight: 700;
+        font-size: 26px;
+        color: #474747;
+
+        
+    }
+
+    &::after, &::before {
+        content: url(../assets/img/icons/star.svg);
+        position: absolute;
+        bottom: -10px;
+    }
+    &::before {
+        left: -166px;
+    }
+    &::after {
+        right: -166px;
+    }
+}
+
+.container-benefit {
+    margin-top: 136px;
+    position: relative;
+
+    // &::after, &::before {
+    //     content: url(../assets/img/icons/star.svg);
+    //     position: absolute;
+    //     bottom: 0;
+    // }
+    // &::before {
+    //     left: -166px;
+    // }
+    // &::after {
+    //     right: -166px;
+    // }
+}

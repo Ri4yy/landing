@@ -1,0 +1,38 @@
+.btn {
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+
+    &--consult {
+        background: $main-color;
+        padding: 24px 16px;
+        border-radius: 35px;
+    }
+    &--work {
+        color: $main-color;
+        font-weight: 600;
+        font-size: 20px;
+
+        background: #fff;
+        padding: 24px 16px;
+        max-width: 320px;
+
+        width: 100%;
+        border-radius: 28px;
+    }
+    &--hero {
+        font-weight: 400;
+        font-size: 20px;
+        color: $main-color;
+        width: fit-content;
+
+        padding: 22px 40px;
+        border: 2px solid $main-color;
+        border-radius: 30px;
+    }
+    &__btn {
+        margin-block-start: auto;
+    }
+}
