@@ -14,6 +14,7 @@ h1 {
 h2 {
     font-weight: 800;
     font-size: 42px;
+    line-height: 1.2;
     color: #fff;
 }
 h3 {
@@ -27,6 +28,16 @@ h3 {
     &--white {
         color: #fff;
     }
+
+    @media(max-width: $breakpoint1024) {
+        font-size: 32px;
+    }
+    @media(max-width: $breakpoint768) {
+        font-size: 24px;
+    }
+    @media(max-width: $breakpoint480) {
+        font-size: 18px;
+    }
 }
 .number {
     font-weight: 800;
@@ -35,6 +46,16 @@ h3 {
 
     &--white {
         color: #fff;
+    }
+
+    @media(max-width: $breakpoint1024) {
+        font-size: 32px;
+    }
+    @media(max-width: $breakpoint768) {
+        font-size: 24px;
+    }
+    @media(max-width: $breakpoint480) {
+        font-size: 18px;
     }
 }
 
@@ -61,12 +82,25 @@ h3 {
 }
 .section {
 
-
+    &--hero {
+        @media(max-width: $breakpoint480) {
+            margin-top: 20px !important;
+        }
+    }
+    &--benefit {
+        overflow: hidden;
+    }
     &--xlarge {
         margin-top: 200px;
 
+        @media(max-width: $breakpoint1024) {
+            margin-top: 120px;
+        }
         @media(max-width: $breakpoint768) {
             margin-top: 90px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 60px;
         }
     }
     &--large {
@@ -75,6 +109,9 @@ h3 {
         @media(max-width: $breakpoint768) {
             margin-top: 90px;
         }
+        @media(max-width: $breakpoint480) {
+            margin-top: 60px;
+        }
     }
     &--medium {
         margin-top: 136px;
@@ -82,9 +119,15 @@ h3 {
         @media(max-width: $breakpoint768) {
             margin-top: 90px;
         }
+        @media(max-width: $breakpoint480) {
+            margin-top: 60px;
+        }
     }
     &--top {
         margin-top: 70px;
+    }
+    @media(max-width: $breakpoint480) {
+        margin-top: 60px;
     }
 }
 

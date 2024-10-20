@@ -6,6 +6,12 @@
     @media(max-width: $breakpoint1024) {
         padding: 40px 40px 60px 40px;
     }
+    @media(max-width: $breakpoint768) {
+        padding: 40px 20px;
+    }
+    @media(max-width: $breakpoint480) {
+        border-radius: 20px;
+    }
 
     &__top {
         display: flex;
@@ -25,6 +31,12 @@
         @media(max-width: $breakpoint1280) {
             gap: 20px;
         }
+        @media(max-width: $breakpoint768) {
+            margin-top: 40px;
+        }
+        @media(max-width: $breakpoint480) {
+            grid-template-columns: unset;
+        }
     }
     &__item {
         display: flex;
@@ -34,11 +46,19 @@
         border-radius: 20px;
         background: $main-color;
         padding: 32px 24px 52px;
+
+        @media(max-width: $breakpoint768) {
+            padding: 26px 20px 32px;
+        }
     }
     &__name {
         font-weight: 700;
         font-size: 30px;
         color: #fff;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 20px;
+        }
     }
     &__img {
         display: flex;
@@ -48,5 +68,9 @@
         font-weight: 400;
         font-size: 26px;
         color: #fff;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 16px;
+        }
     }
 }

@@ -9,6 +9,20 @@
         background: $main-color;
         padding: 24px 16px;
         border-radius: 35px;
+
+        &_mobile {
+            @media(max-width: $breakpoint480) {
+                display: flex !important;
+                padding: 14px 16px !important;
+            } 
+        }
+
+        @media(max-width: $breakpoint768) {
+            padding: 20px 10px;
+        }
+        @media(max-width: $breakpoint480) {
+            display: none;
+        } 
     }
     &--work {
         color: $main-color;
@@ -21,6 +35,14 @@
 
         width: 100%;
         border-radius: 28px;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 16px;
+            padding: 14px;
+        }
+        @media(max-width: $breakpoint480) {
+            max-width: 100%;
+        }
     }
     &--hero {
         font-weight: 400;
@@ -31,8 +53,35 @@
         padding: 22px 40px;
         border: 2px solid $main-color;
         border-radius: 30px;
+
+        @media(max-width: $breakpoint1280) {
+            font-size: 16px;
+            padding: 14px 20px;
+        }
+        @media(max-width: $breakpoint480) {
+            width: 100%;
+        }
     }
     &__btn {
         margin-block-start: auto;
+    }
+
+    &__consult {
+        padding: 24px 62px;
+        border-radius: 28px;
+        background: $main-color;
+
+        font-weight: 500;
+        font-size: 20px;
+        color: #fff;
+
+        @media(max-width: $breakpoint768) {
+            padding: 14px 30px;
+            font-size: 16px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 20px;
+            width: 100%;
+        } 
     }
 }

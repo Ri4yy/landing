@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="./assets/libs/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -14,12 +13,28 @@
                 <a href="#" class="logo">
                     <img src="./assets/img/icons/logo.svg" alt="">
                 </a>
+                <nav class="menu">
+                    <ul class="menu-nav">
+                        <li class="menu-nav__item">
+                            <a href="#about" class="menu-nav__link">Обо мне</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#consult" class="menu-nav__link">Консультация</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#sign" class="menu-nav__link">Записаться</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="#reviews" class="menu-nav__link">Отзывы</a>
+                        </li>
+                        <li class="menu-nav__item">
+                            <a href="https://t.me/manager_fyodoroova" class="btn btn--consult btn--consult_mobile btn--green">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+                        </li>
+                    </ul>
+                </nav>
                 <div class="header__contacts">
                     <a href="https://t.me/manager_fyodoroova" class="btn btn--consult btn--green">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
                     <button class="btn-menu">
-                        <!-- <span></span>
-                        <span></span>
-                        <span></span> -->
                         <svg width="55" height="32" viewBox="0 0 55 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 2H54.5" stroke="#016B5A" stroke-width="4" />
                             <path d="M6 30L54 30" stroke="#016B5A" stroke-width="4" />
@@ -33,7 +48,7 @@
     </header>
 
     <main>
-        <!-- <section class="section">
+        <section class="section section--hero"> 
             <div class="hero">
                 <div class="hero__top">
                     <img src="./assets/img/photo/hero-top.png" class="" alt="">
@@ -50,9 +65,9 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <section class="section section--xlarge">
+        <section class="section section--xlarge" id="about">
             <div class="container">
                 <div class="about">
                     <div class="about__top">
@@ -73,7 +88,7 @@
             </div>
         </section>
 
-        <!-- <section class="section section--medium">
+        <section class="section section--medium section--benefit">
             <div class="container container-benefit">
                 <div class="benefit">
                     <div class="benefit__item">
@@ -99,9 +114,9 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
-        <section class="section section--large">
+        <section class="section section--large" id="consult">
             <div class="container">
                 <div class="consult">
                     <div class="consult__top">
@@ -137,11 +152,16 @@
                             <p class="consult__description">Неправильный подход к SMM может привести к потерям. Первая консультация помогает избежать ошибок, что сэкономит ваше время и деньги в будущем.</p>
                         </div>
                     </div>
+                    <div class="consult__bottom">
+                        <div class="left-angle"></div>
+                        <button class="btn btn__consult">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                        <div class="right-angle"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="section section--large">
+        <section class="section section--large" id="sign">
             <div class="container">
                 <div class="work">
                     <div class="work__top">
@@ -164,7 +184,7 @@
             </div>
         </section>
         
-        <section class="section section--large">
+        <section class="section section--large" id="reviews">
             <div class="container">
                 <div class="reviews">
                     <div class="reviews__top">

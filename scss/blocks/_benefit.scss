@@ -6,22 +6,51 @@
     justify-content: space-between;
     grid-template-columns: repeat(3, auto);
 
+    @media(max-width: 1870px) {
+        padding: 0 220px;
+    }
+    @media(max-width: $breakpoint1280) {
+        padding: 0 100px;
+    }
+    @media(max-width: $breakpoint1024) {
+        padding: 0;
+    }
+    @media(max-width: 600px) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
     &__item {
         position: relative;
+        width: fit-content;
+
+
 
         &:nth-of-type(1) {
             & .benefit__post {
                 transform: translate(70px, -10px);
+
+                @media(max-width: $breakpoint1024) {
+                    transform: translate(0, -10px);
+                }
             }
         }
         &:nth-of-type(2) {
             & .benefit__post {
                 transform: translate(20px, -10px);
+
+                @media(max-width: $breakpoint1024) {
+                    transform: translate(0, -10px);
+                }
             }
         }
         &:nth-of-type(3) {
             & .benefit__post {
                 transform: translate(110px, -10px);
+
+                @media(max-width: $breakpoint1024) {
+                    transform: translate(0, -10px);
+                }
             }
         }
     }
@@ -31,11 +60,19 @@
         line-height: 1;
         font-size: 96px;
         color: #016b5a;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 56px;
+        }
     }
     &__small {
         font-weight: 400;
         font-size: 36px;
         color: #016b5a;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 20x;
+        }
     }
     &__post {
         display: block;
@@ -46,24 +83,38 @@
         font-size: 26px;
         color: #474747;
 
-        
+        @media(max-width: $breakpoint768) {
+            font-size: 16px;
+        }
     }
 
     &::after, &::before {
         content: url(../assets/img/icons/star.svg);
         position: absolute;
         bottom: -10px;
+
+        @media(max-width: $breakpoint1280) {
+            display: none;
+        }
     }
     &::before {
         left: -166px;
+
+        @media(max-width: 1870px) {
+            left: 0;
+        }
     }
     &::after {
         right: -166px;
+
+        @media(max-width: 1870px) {
+            right: 0;
+        }
     }
 }
 
 .container-benefit {
-    margin-top: 136px;
+    // margin-top: 136px;
     position: relative;
 
     // &::after, &::before {

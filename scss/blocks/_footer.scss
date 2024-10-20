@@ -2,6 +2,15 @@
     margin-top: 150px;
     padding-bottom: 132px;
 
+    @media(max-width: $breakpoint768) {
+        margin-top: 100px;
+        padding-bottom: 80px;
+    }
+    @media(max-width: $breakpoint480) {
+        margin-top: 60px;
+        padding-bottom: 30px;
+    }
+
     &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, auto);
@@ -10,37 +19,77 @@
 
         @media(max-width: $breakpoint1440) {
             grid-template-columns: repeat(2, auto);
+            justify-content: start;
+            row-gap: 40px;
         }
         @media(max-width: $breakpoint1024) {
             padding-right: 0;
         }
+        @media(max-width: $breakpoint768) {
+            column-gap: 40px;
+        }
+        @media(max-width: $breakpoint480) {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            gap: 20px;
+        }
     }
     &__business {
         height: fit-content;
+        width: fit-content;
 
         & img {
-
+            @media(max-width: $breakpoint480) {
+                max-width: 100px;
+            }
         }
     }
     &__contacts {
-        @media(max-width: $breakpoint1024) {
+        width: fit-content;
+
+        @media(max-width: $breakpoint1440) {
             grid-column: span 2;
+        }
+        @media(max-width: $breakpoint480) {
+            grid-column: unset;
         }
     }
     &__title {
         font-weight: 800;
         font-size: 42px;
         color: #016b5a;
+
+        @media(max-width: $breakpoint768) {
+            font-size: 28px;
+        }
+        @media(max-width: $breakpoint480) {
+            font-size: 20px;
+            text-align: center;
+        }
     }
     &__link {
         margin-top: 24px;
         display: flex;
         align-items: center;
         gap: 14px; 
-
         font-weight: 400;
         font-size: 26px;
         color: #474747;
+
+        @media(max-width: $breakpoint1440) {
+            margin-top: 0px;
+        }
+        @media(max-width: $breakpoint480) {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        & img {
+            @media(max-width: $breakpoint480) {
+                width: 26px;
+            }
+        }
+
     }
     &__info {
         display: flex;
@@ -51,10 +100,20 @@
             font-weight: 400;
             font-size: 26px;
             color: #474747;
+
+            @media(max-width: $breakpoint768) {
+                font-size: 16px;
+            }
         }
     }
     &__company {
         display: block;
         margin-top: 20px;
+
+        & img {
+            @media(max-width: $breakpoint480) {
+                max-width: 100px;
+            }
+        }
     }
 }
